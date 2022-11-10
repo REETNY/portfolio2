@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hide-nav{
+    display: none !important;
+}
+
+.for-mobile{
+    display: none !important;
+}
+
+
+/* nav bar and intro with pics */
+
+.navbar{
+    width: 100%;
+}
+
+.navigation{
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #F6F6F6;
+}
+
+.nav-link{
+    flex-basis: 45%;
+    margin-top: 30px;
+}
+
+.links{
+    width: 70%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links li{
+    list-style-type: none;
+}
+
+.links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+
+
+/* hovering for links  */
+
+.links li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -15px;
+    background-color: #2E2E2E;
+    margin-bottom: 13px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all .4s ease-out;
+}
+
+.links li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+
+
+/* end of hovering for links  */
+
+.self-pic{
+    flex-basis: 50%;
+    max-height: 600px;
+}
+
+.self-img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.self-intro{
+    position: absolute;
+    font-size: 70px;
+    font-weight: 700;
+    top: 120px;
+    left: -83px;
+    line-height: 90px;
+    color: #999999;
+
+}
+
+.socials{
+    position: absolute;
+    top: 420px;
+    left: -79px;
+}
+
+.socials a{
+    font-size: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.cv{
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    bottom: -30px;
+    left: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE8E8;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* end of nav bar and intro with pics */
+
+
+
+/* section 1 */
+
+.section1{
+    margin-top: 180px;
+    color: #999999;
+}
+
+.work{
+    font-size: 65px;
+}
+
+.work-intro{
+    font-size: 30px;
+    font-weight: 500;
+    color: #6D6D6D;
+}
+
+.work-year{
+    font-size: 18px;
+    font-weight: 500;
+    color: #7E7C7C;
+}
+
+.work-info{
+    font-size: 18px;
+}
+
+/*end of section 1 */
+
+
+
+
+/* section 2 */
+
+.project-head{
+    font-size: 65px;
+    color: #999999;
+}
+
+.project-imgCont{
+    height: 490px;
+    width: 100%;
+}
+
+.img-fit{
+    width: 100%;
+    height: 100%;
+}
+
+.project-name{
+    font-size: 45px;
+    color: #999999;
+}
+
+.project-details{
+    width: 85%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+/* end of section 2 */
+
+
+
+
+/* section 3 */
+
+.about-head{
+    font-size: 65px;
+    color: #999999;
+}
+
+.about-info1{
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-imgs{
+    height: 220px;
+    width: 100%;
+    position: relative;
+}
+
+.tree-back{
+    width: 100%;
+    height: 100%;
+}
+
+.about-contact{
+    background-color: #FFE8E8;
+    width: fit-content;
+    padding: 20px 100px 20px 20px;
+    position: absolute;
+    top: 115px;
+    right: 145px;
+
+}
+
+.email{
+    font-size: 18px;
+    opacity: 60%;
+    color: #7E7C7C;
+}
+
+.mail{
+    font-size: 18px;
+    font-weight: 400;
+    color: #2E2E2E;
+}
+
+.contact-others{
+    width: 37%;
+    margin-top: 45px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-info2{
+    margin-top: 180px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* end of section 3 */
+
+
+/* footer */
+
+.footer{
+    background-color: #D8D8D8;
+    margin-top: 100px;
+}
+
+.who-built{
+    font-size: 17px;
+    font-weight: 500;
+    color: #6D6D6D;
+}
+
+.when-built{
+    font-size: 17px;
+    font-weight: 400;
+    color: #6D6D6D;
+}
+
+/* end of footer */
+
+
+/* ipad view  */
+
+@media only screen and (min-width: 550px) and (max-width: 1020px){
+
+    .hide-nav{
+        display: none !important;
+    }
+
+    .for-mobile{
+        display: none !important;
+    }
+
+    .navigation{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #F6F6F6;
+    }
+
+    .self-intro{
+        position: absolute;
+        font-size: 49px;
+        font-weight: 700;
+        top: 150px;
+        left: -55px;
+        line-height: 60px;
+        color: #999999;
+    
+    }
+
+    .socials{
+        position: absolute;
+        top: 380px;
+        left: -50px;
+    }
+
+    .cv{
+        position: absolute;
+        width: 120px;
+        height: 60px;
+        bottom: -30px;
+        left: -50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(255, 232, 232);
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: opacity 2s ease;
+    }
+
+    .cv:active{
+        background-color: rgb(255, 232, 232);
+        opacity: 60%;
+    }
+
+    .links{
+        width: 80%;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+    .work-intro{
+        font-size: 24px;
+        font-weight: 500;
+        color: #6D6D6D;
+    }
+    
+    .project-imgCont{
+        height: 390px;
+        width: 100%;
+    }
+
+    .project-name{
+        font-size: 35px;
+        color: #999999;
+    }
+    
+    .project-details{
+        width: 85%;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+
+
+
+
+    .about-contact{
+        background-color: #FFE8E8;
+        width: fit-content;
+        padding: 20px 20px 20px 20px;
+        position: absolute;
+        top: 115px;
+        right: 45px;
+    
+    }
+
+    .contact-others{
+        width: 50%;
+        margin-top: 45px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+}
+
+
+
+
+
+
+/* end of ipad view  */
+
+
+
+/* mobile view  */
+@media only screen and (max-width: 550px){
+
+    .hide-nav{
+        display: block !important;
+    }
+    
+    .toggler-btn{
+        border: none !important;
+        outline: none !important;
+        color: transparent !important;
+    }
+
+    .for-mobile{
+        display: block !important;
+    }
+
+    .liner{
+        line-height: 50px;
+        font-size: 45px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        color: #999999;
+        display: flex;
+    }
+
+    .mybtn-color{
+        background-color: #ffe8e8;
+        border: none;
+    }
+
+    .mybtn-color:active{
+        background-color: #ffe8e8;
+        opacity: .6;
+    }
+
+    .mybtn-color:hover{
+        background-color: #ffe8e8;
+        opacity: .6;
+    }
+
+    .img-mobile{
+        width: 100%;
+        height: 350px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0,.2);
+        box-shadow: -2px 3px 2px 2px rgb(224, 221, 221);
+    }
+
+    .mobile-fit{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .mobile-socials .fb{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+        margin-right: 25px;
+    }
+
+    .mobile-socials .insta{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+        margin-right: 25px;
+    }
+
+    .mobile-socials .tweet{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+
+    .navbars{
+        overflow: hidden !important;
+        display: none;
+    }
+
+    .section1{
+        margin-top: 50px;
+    }
+
+    .work{
+        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .work-intro {
+        font-size: 28px;
+        font-weight: 500;
+        color: #6D6D6D;
+        text-align: center;
+    }
+
+    .work-info{
+        text-align: center;
+        margin: 5px 0 15px 0;
+    }
+
+  .work-year {
+    font-size: 17px;
+    font-weight: 500;
+    color: #7E7C7C;
+    text-align: center;
+  }
+
+  .pills{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+
+  .project-head {
+    font-size: 42px;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-imgCont{
+    height: 300px;
+  }
+
+  .project-name{
+    font-size: 28px;
+    margin-top: 15px !important;
+  }
+
+  .project-details {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .pro-2{
+    margin: 0px !important;
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px !important;
+  }
+
+  .pro-info2{
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 45px !important;
+  }
+
+  .pro-3{
+    margin: 0px !important;
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px !important;
+    margin-top: 45px !important;
+  }
+
+  .pro-info2{
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 45px !important;
+  }
+
+
+
+
+
+
+  .about-head {
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    color: #999999;
+    margin-bottom: 20px !important;
+  }
+
+  .about-info1 {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .about-contact {
+    background-color: #FFE8E8;
+    width: fit-content;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .email{
+    font-size: 15px;
+  }
+
+  .mail{
+    font-size: 14px;
+  }
+
+  .contact-others {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    position: static;
+  }
+
+  .about-info2 {
+    margin-top: 150px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-sign{
+    padding: 0px !important;
+    margin: 0 !important;
+    margin-top: 20px !important;
+  }
+
+  .footer {
+    background-color: #D8D8D8;
+    margin-top: 50px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+}
+
+
+/* end of mobile view  */
